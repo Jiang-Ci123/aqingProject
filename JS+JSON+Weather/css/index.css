@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1866935 */
+    src: url('//at.alicdn.com/t/font_1866935_jaopflkhzf.eot');
+    src: url('//at.alicdn.com/t/font_1866935_jaopflkhzf.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.woff2') format('woff2'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.woff') format('woff'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.ttf') format('truetype'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont"!important;
+    font-size: 16px;
+    font-style: normal;
+}
+
+
+/* 清除默认样式 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 高度塌陷问题 */
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 435px;
+    width: 740px;
+    background-color: #1F252D;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 70px -10px rgba(0, 0, 0, 0.2);
+}
+
+.left-side {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0 35px -10px rgba(0, 0, 0, 0.2);
+    float: left
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    border-radius: 25px 0 0 25px;
+    opacity: 0.8;
+}
+
+.date-container {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.date-container .date-dayname {
+    display: block;
+    margin-top: 4px;
+}
+
+#location {
+    display: block;
+    margin-top: 4px;
+}
+
+.weather-conteiner {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+#weather-l {
+    font-size: 70px;
+}
+
+.weather-temp {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.weather-desc {
+    font-size: 20px;
+}
+
+
+/* 右边部分 */
+
+.right-side {
+    float: right;
+    /* background-color: red; */
+    padding-top: 25px;
+    margin-right: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.today-info {
+    /* background-color: royalblue; */
+    padding: 15px 15px 0 15px;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.today-info div {
+    border-bottom: 10px;
+}
+
+.today-info .a {
+    margin: 6px 0px;
+}
+
+.today-info .title {
+    float: left;
+}
+
+.today-info .value {
+    float: right;
+}
+
+.week-list {
+    margin: 10px 35px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.week-list li {
+    float: left;
+    /* background-color: red; */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.week-list li span {
+    display: block;
+}
+
+.week-list {
+    position: relative;
+    z-index: 99999;
+}
+
+.week-list li:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #222831;
+}
+
+.week-list .iconfont {
+    font-size: 37px;
+}
+
+.active {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #222831;
+}
+
+.week-list .day-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.week-list .day-temp {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.location-container {
+    padding: 25px 35px;
+    position: relative;
+    /* background-color: red; */
+    width: 330px;
+    height: 126px;
+}
+
+.location-container input {
+    outline: none;
+    width: 300px;
+    height: 28px;
+    padding: 6px;
+    display: block;
+    box-sizing: border-box;
+    /* font-weight: bold; */
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 150px);
+    border: none;
+    border-radius: 5px;
+    color: #222831;
+}
+
+.location-container button {
+    outline: none;
+    width: 320px;
+    /* height: 28px; */
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    /* font-size: 18px; */
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 50px -5px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    transition: 200ms;
+    position: absolute;
+    bottom: -80px;
+    left: calc(50% - 160px);
+}
+
+.location-container button:hover {
+    transform: scale(1.05);
+}

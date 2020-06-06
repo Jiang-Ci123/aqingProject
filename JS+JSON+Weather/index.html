@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <!-- 左边 -->
+        <div class="left-side">
+            <!-- 渐变 -->
+            <div class="gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname" id="date-dayname">周六</h2>
+                <span class="date-day" id="date-day">2020-06-06</span>
+                <!-- location 图标 -->
+                <span class="iconfont" id="location">&#xe6e5;开封</span>
+            </div>
+
+            <div class="weather-conteiner">
+                <!-- 天气图标 -->
+                <span class="iconfont" id="weather-l">&#xe61f;</span>
+                <div class="weather-temp" id="weather-temp">30℃</div>
+                <div class="weather-desc" id="weather-desc">晴天</div>
+            </div>
+        </div>
+
+        <!-- 右边部分 -->
+        <div class="right-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <!-- PM2.5 -->
+                    <div class="pm clearfix ">
+                        <span class="title">PM2.5</span>
+                        <span class="value" id="pm">00</span>
+                    </div>
+                    <!-- 湿度 -->
+                    <div class="humidity clearfix a">
+                        <span class="title">湿度</span>
+                        <span class="value" id="humidity">00</span>
+                    </div>
+                    <!-- 风速 -->
+                    <div class="wind clearfix ">
+                        <span class="title">风速</span>
+                        <span class="value" id="wind">00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="week-container">
+                <ul class="week-list">
+                    <li class="active" id="day1">
+                        <!-- 天气图标 -->
+                        <span class="iconfont">&#xe61f;</span>
+                        <span class="day-name">周六</span>
+                        <span class="day-temp">30℃</span>
+                    </li>
+                    <li id="day2">
+                        <!-- 天气图标 -->
+                        <span class="iconfont">&#xe61f;</span>
+                        <span class="day-name">周日</span>
+                        <span class="day-temp">30℃</span>
+                    </li>
+                    <li id="day3">
+                        <!-- 天气图标 -->
+                        <span class="iconfont">&#xe61f;</span>
+                        <span class="day-name">周一</span>
+                        <span class="day-temp">30℃</span>
+                    </li>
+                    <li id="day4">
+                        <!-- 天气图标 -->
+                        <span class="iconfont">&#xe61f;</span>
+                        <span class="day-name">周二</span>
+                        <span class="day-temp">30℃</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="location-container">
+                <input type="text" id="city" placeholder="位置">
+                <button class="location-button" id="location-button">
+                    <!-- location图标 -->
+                    <span class="iconfont" >&#xe6e5;查询</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
