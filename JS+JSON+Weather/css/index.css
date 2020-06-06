@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'iconfont';
-    /* project id 1866935 */
-    src: url('//at.alicdn.com/t/font_1866935_jaopflkhzf.eot');
-    src: url('//at.alicdn.com/t/font_1866935_jaopflkhzf.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.woff2') format('woff2'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.woff') format('woff'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.ttf') format('truetype'), url('//at.alicdn.com/t/font_1866935_jaopflkhzf.svg#iconfont') format('svg');
-}
-
-.iconfont {
-    font-family: "iconfont"!important;
-    font-size: 16px;
-    font-style: normal;
-}
-
-
 /* 清除默认样式 */
 
 * {

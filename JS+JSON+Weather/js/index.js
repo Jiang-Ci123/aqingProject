@@ -142,7 +142,7 @@ window.onload = function() {
     document.body.appendChild(oldScript);
 
     btn.onclick = function() {
-        // 加个简单判断，输入内容是否为空
+        // 加个判断，输入内容是否为空
         if (city.value) {
             var newScript = document.createElement("script");
             newScript.src = `https://api.asilu.com/weather/?city=${city.value}&callback=weather`;
